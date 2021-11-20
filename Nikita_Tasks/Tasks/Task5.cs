@@ -58,14 +58,15 @@ namespace Nikita_Tasks.Tasks
 
         public static Action NumberDesc = () =>
         {
-            int number = rnd.Next(99, 999);
+            int number = 300; // rnd.Next(99, 999);
 
             int hundreds = (number / 100) * 100;
-            int decimals = number - hundreds;
             int singleNumbers = number % 10;
+            int decimals = number - hundreds - singleNumbers;
 
 
-            Console.WriteLine(decimals < 20 ? $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)decimals}" : $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)(number - hundreds - singleNumbers)} {(SingleNumbers)singleNumbers}");
+            Console.WriteLine(number - hundreds < 20 ? $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)number - hundreds}" : $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)(number - hundreds - singleNumbers)} {(SingleNumbers)singleNumbers}");
+           
         };
     }
 }
