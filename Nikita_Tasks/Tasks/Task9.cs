@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nikita_Tasks.Tasks
 {
-    class NumbersSeq
+    class Task9
     {
         public delegate void Numbers(int a, int b);
 

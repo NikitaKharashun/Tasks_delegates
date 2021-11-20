@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nikita_Tasks.Tasks
 {
-    class Temperature
+    class Task1
     {
         public delegate int ToCelsius(int farenheit);
         public static ToCelsius convert = (temperature) => temperature = (temperature - 32) * 5 / 9;

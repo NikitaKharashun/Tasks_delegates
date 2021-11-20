@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nikita_Tasks.Tasks
 {
-    class SquaresInARec
+    class Task6
     {
         public delegate int AmountOfSquares(int a, int b, int c);
 

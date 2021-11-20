@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nikita_Tasks.Tasks
 {
-    class Triangle
+    class Task2
     {
         public delegate int GetSide(int x1, int y1, int x2, int y2);
         public delegate double GetArea(int x1, int y1, int x2, int y2, int x3, int y3);

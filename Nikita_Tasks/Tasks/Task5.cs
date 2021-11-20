@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nikita_Tasks.Tasks
 {
-    class NumbersDesc
+    class Task5
     {
         public static readonly Random rnd = new Random();
         public delegate void NumberDesc(int number);
@@ -48,7 +48,7 @@ namespace Nikita_Tasks.Tasks
         {
             сто = 100,
             двести = 200,
-            тринста = 300,
+            триста = 300,
             четыреста = 400,
             пятьсот = 500,
             шестьсот = 600,
@@ -61,9 +61,9 @@ namespace Nikita_Tasks.Tasks
         {
             int hundreds = (number / 100) * 100;
             int singleNumbers = number % 10;
-            int decimals = number % 100;
+            int decimals = number - hundreds;
 
-            Console.WriteLine((decimals > 9 && decimals < 20) ? $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)decimals}" : $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)decimals} {(SingleNumbers)singleNumbers}");
+            Console.WriteLine(decimals < 20 ? $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)decimals}" : $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)(number - hundreds - singleNumbers)} {(SingleNumbers)singleNumbers}");
         };
     }
 }

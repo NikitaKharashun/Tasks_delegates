@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nikita_Tasks.Tasks
 {
-    class LuckyTicket
+    class Task3
     {
         public delegate void IsTicketLucky(int number);
 
