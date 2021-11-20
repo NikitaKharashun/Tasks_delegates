@@ -8,7 +8,6 @@ namespace Nikita_Tasks.Tasks
 {
     class Task1
     {
-        public delegate int ToCelsius(int farenheit);
-        public static ToCelsius convert = (temperature) => temperature = (temperature - 32) * 5 / 9;
+        public static Func<int, double> ToCelsius  = (temperature) => temperature = (temperature - 32) * 5 / 9;
     }
 }

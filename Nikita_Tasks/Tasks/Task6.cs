@@ -8,16 +8,23 @@ namespace Nikita_Tasks.Tasks
 {
     class Task6
     {
-        public delegate int AmountOfSquares(int a, int b, int c);
-
-        public static AmountOfSquares squaresInARec = (a, b, c) =>
+        public static Action AmountOfSquares = () =>
         {
-            int rectaglesArea = a * b;
-            int AreaOfSquare = c * c;
-            if (rectaglesArea >= AreaOfSquare)         
-                 return  (rectaglesArea %= AreaOfSquare) == 0 ? 1 : rectaglesArea /= AreaOfSquare;
+            Console.WriteLine("Введите длину прямоугольника: ");
+            int.TryParse(Console.ReadLine(), out int rectangleLenght);
+
+            Console.WriteLine("Введите ширину прямоугольника: ");
+            int.TryParse(Console.ReadLine(), out int rectangleWidth);
+
+            Console.WriteLine("Введите длину прямоугольника: ");
+            int.TryParse(Console.ReadLine(), out int sideOfSquare);
+
+            int rectaglesArea = rectangleLenght * rectangleWidth;
+            int AreaOfSquare = sideOfSquare * sideOfSquare;
+            if (rectaglesArea >= AreaOfSquare)
+                Console.WriteLine((rectaglesArea %= AreaOfSquare) == 0 ? $"Площадь квадрата равна площади прямоугольника" : $"Количество квадратов: {rectaglesArea /= AreaOfSquare}");
             else
-                return 0;
+                Console.WriteLine("Ни одного");
         };
     }
 }

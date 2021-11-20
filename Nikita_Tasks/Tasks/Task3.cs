@@ -10,8 +10,10 @@ namespace Nikita_Tasks.Tasks
     {
         public delegate void IsTicketLucky(int number);
 
-        public static IsTicketLucky isLucky = (number) =>
+        public static Action IsLucky = () =>
         {
+            Console.WriteLine("Введите номер билета: ");
+            int.TryParse(Console.ReadLine(), out int number);
             int n1, n2, n3, n4, n5, n6;
             n6 = number / 100000;
             number -= n6 * 100000;

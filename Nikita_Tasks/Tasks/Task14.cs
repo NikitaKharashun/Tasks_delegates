@@ -13,17 +13,14 @@ namespace Nikita_Tasks.Tasks
             Console.WriteLine("Введите текст: ");
             string text = Console.ReadLine();
 
-            string[] words = text.Split(' ', ',', ';', '!', ':', ';');
+            string[] words = text.Split(' ', ',', ';', '!', ':', ';', '.', '?');
             string[] vowels = new string[] { "а", "и", "е", "ё", "о", "у", "ы", "э", "ю", "я" };
 
             int counter = 0;
             foreach (var word in words)
             {
-                foreach (var vowel in vowels)
-                {
-                    if (word.ToLower().EndsWith(vowel))                   
-                        counter++;                  
-                }                                  
+                foreach (var vowel in vowels)             
+                        counter += word.ToLower().EndsWith(vowel) ? 1 : 0;                                                 
             }
 
             Console.WriteLine($"Всего слов заканчивающихся на гласную: {counter}");

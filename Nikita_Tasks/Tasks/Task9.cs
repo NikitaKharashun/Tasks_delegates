@@ -8,14 +8,15 @@ namespace Nikita_Tasks.Tasks
 {
     class Task9
     {
-        public delegate void Numbers(int a, int b);
-
-        public static Numbers numbers = (a, b) =>
+        public static Action Numbers = () =>
         {
-            for (; a <= b; a++)
+            int from = 2;
+            int to = 7;
+
+            for (; from <= to; from++)
             {
-                for (int j = 0; j < a; j++)
-                    Console.Write(a + " ");
+                for (int j = 0; j < from; j++)
+                    Console.Write(from + " ");
                 Console.WriteLine();
             }
         };

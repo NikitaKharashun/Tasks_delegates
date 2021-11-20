@@ -12,7 +12,7 @@ namespace Nikita_Tasks
         static void Main(string[] args)
         {
             // Task 1
-            Console.WriteLine(Task1.convert(248));
+            Console.WriteLine(Task1.ToCelsius(248));
             Console.WriteLine(new string('-', 32));
 
             //Task 2
@@ -21,23 +21,16 @@ namespace Nikita_Tasks
             Console.WriteLine($"Площадь => {Task2.getArea(1, 1, 2, 4, 4, 2)}");
             Console.WriteLine(new string('-', 32));
 
-            // Task 3
-            int.TryParse(Console.ReadLine(), out int numberOFTicket);
-            Task3.isLucky(numberOFTicket);
+            // Task 3           
+            Task3.IsLucky();
             Console.WriteLine(new string('-', 32));
 
-            // Task 4 ???
-
             // Task 5
-            int rndnumber = Task5.rnd.Next(100, 999);
-            Task5.numberdesc(rndnumber);
+            Task5.NumberDesc();
             Console.WriteLine(new string('-', 32));
 
             // Task 6
-            int.TryParse(Console.ReadLine(), out int rectangleLenght);
-            int.TryParse(Console.ReadLine(), out int rectangleWidth);
-            int.TryParse(Console.ReadLine(), out int sideOfSquare);
-            Console.WriteLine(Task6.squaresInARec(rectangleLenght, rectangleWidth, sideOfSquare));
+            Task6.AmountOfSquares();
             Console.WriteLine(new string('-', 32));
 
             // Task 8
@@ -45,21 +38,16 @@ namespace Nikita_Tasks
             Console.WriteLine(new string('-', 32));
 
             // Task 9
-            int from = 2;
-            int to = 7;
-            Task9.numbers(from, to);
+            Task9.Numbers();
             Console.WriteLine(new string('-', 32));
-
 
             // Task 12
             Task12.IsPalindrome();
             Console.WriteLine(new string('-', 32));
 
-
             // Task 14
             Task14.EndsWithVowel();
             Console.WriteLine(new string('-', 32));
-
 
             // Task 15
             Task16.GetMax();

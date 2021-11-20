@@ -9,7 +9,6 @@ namespace Nikita_Tasks.Tasks
     class Task5
     {
         public static readonly Random rnd = new Random();
-        public delegate void NumberDesc(int number);
 
         enum SingleNumbers
         {
@@ -57,11 +56,14 @@ namespace Nikita_Tasks.Tasks
             девятьсот = 900
         }
 
-        public static NumberDesc numberdesc = (number) =>
+        public static Action NumberDesc = () =>
         {
+            int number = rnd.Next(99, 999);
+
             int hundreds = (number / 100) * 100;
-            int singleNumbers = number % 10;
             int decimals = number - hundreds;
+            int singleNumbers = number % 10;
+
 
             Console.WriteLine(decimals < 20 ? $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)decimals}" : $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)(number - hundreds - singleNumbers)} {(SingleNumbers)singleNumbers}");
         };
