@@ -16,14 +16,14 @@ namespace Nikita_Tasks.Tasks
             Console.WriteLine("Введите ширину прямоугольника: ");
             int.TryParse(Console.ReadLine(), out int rectangleWidth);
 
-            Console.WriteLine("Введите длину прямоугольника: ");
+            Console.WriteLine("Введите длину квадрата: ");
             int.TryParse(Console.ReadLine(), out int sideOfSquare);
 
             int rectaglesArea = rectangleLenght * rectangleWidth;
             int AreaOfSquare = sideOfSquare * sideOfSquare;
 
             if (rectaglesArea >= AreaOfSquare)
-                Console.WriteLine((rectaglesArea %= AreaOfSquare) == 0 ? $"Площадь квадрата равна площади прямоугольника" : $"Количество квадратов: {rectaglesArea /= AreaOfSquare}");
+                Console.WriteLine(rectaglesArea / AreaOfSquare == 1 ? $"Площадь квадрата равна площади прямоугольника" : $"Количество квадратов: {rectaglesArea /= AreaOfSquare}");
             else
                 Console.WriteLine("Ни одного");
         };

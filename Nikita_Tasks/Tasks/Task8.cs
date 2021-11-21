@@ -17,8 +17,7 @@ namespace Nikita_Tasks.Tasks
             while (input != '.')
             {
                 input = Console.ReadKey().KeyChar;
-                if (input == ' ')
-                    spaceCounter++;
+                    spaceCounter += input == ' ' ? 1 : 0;
             }
             Console.WriteLine();
             Console.WriteLine($"Было введено: {spaceCounter} пробелов");

@@ -16,7 +16,8 @@ namespace Nikita_Tasks.Tasks
             for (; from <= to; from++)
             {
                 for (int j = 0; j < from; j++)
-                    Console.Write(from + " ");
+                    Console.Write($"{from} ");
+
                 Console.WriteLine();
             }
         };

@@ -14,13 +14,10 @@ namespace Nikita_Tasks.Tasks
         {
             int[,] mass = new int[5, 5];
 
-            int rows = mass.GetUpperBound(0) + 1;
-            int columns = mass.Length / rows;
-
             int max = 0;
-            for (int j = 0; j < rows; j++)
+            for (int j = 0; j < mass.GetUpperBound(0) + 1; j++)
             {
-                for (int i = 0; i < columns; i++)
+                for (int i = 0; i < mass.Length / mass.GetUpperBound(0) + 1; i++)
                 {
                     mass[j, i] = rnd.Next(-100, 100);
 
