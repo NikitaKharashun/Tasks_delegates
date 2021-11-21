@@ -18,7 +18,7 @@ namespace Nikita_Tasks.Tasks
             int sum = 0;
 
             for (int i = 0; i < numbers.Length; i++)           
-                sum =+ i < 3 ? numbers[i] : -numbers[i];
+                sum += i < 3 ? numbers[i] : -numbers[i];
             
 
             Console.WriteLine(sum == 0 ? "Ваш билет счастливый" : "Ваш билет не счастливый");

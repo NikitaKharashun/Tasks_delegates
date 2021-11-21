@@ -20,10 +20,10 @@ namespace Nikita_Tasks.Tasks
             int.TryParse(Console.ReadLine(), out int sideOfSquare);
 
             int rectaglesArea = rectangleLenght * rectangleWidth;
-            int AreaOfSquare = sideOfSquare * sideOfSquare;
+            int areaOfSquare = sideOfSquare * sideOfSquare;
 
-            if (rectaglesArea >= AreaOfSquare)
-                Console.WriteLine(rectaglesArea / AreaOfSquare == 1 ? $"Площадь квадрата равна площади прямоугольника" : $"Количество квадратов: {rectaglesArea /= AreaOfSquare}");
+            if (rectaglesArea >= areaOfSquare)
+                Console.WriteLine(rectaglesArea / areaOfSquare == 1 ? $"Площадь квадрата равна площади прямоугольника" : $"Количество квадратов: {rectaglesArea / areaOfSquare}");
             else
                 Console.WriteLine("Ни одного");
         };
