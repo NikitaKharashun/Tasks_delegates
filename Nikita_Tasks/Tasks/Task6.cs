@@ -21,6 +21,7 @@ namespace Nikita_Tasks.Tasks
 
             int rectaglesArea = rectangleLenght * rectangleWidth;
             int AreaOfSquare = sideOfSquare * sideOfSquare;
+
             if (rectaglesArea >= AreaOfSquare)
                 Console.WriteLine((rectaglesArea %= AreaOfSquare) == 0 ? $"Площадь квадрата равна площади прямоугольника" : $"Количество квадратов: {rectaglesArea /= AreaOfSquare}");
             else

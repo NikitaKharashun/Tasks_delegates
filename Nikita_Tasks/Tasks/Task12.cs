@@ -14,12 +14,12 @@ namespace Nikita_Tasks.Tasks
             string testPalindrome = Console.ReadLine();
 
             char[] charMass = testPalindrome.ToCharArray();
-            string reverse = "";
+            string reverseString = "";
 
             for (int i = charMass.Length - 1; i > -1; i--)
-                reverse += charMass[i];
+                reverseString += charMass[i];
 
-            Console.WriteLine(testPalindrome.Equals(reverse) ? "Это палиндром" : "Это не палиндром");
+            Console.WriteLine(testPalindrome.Equals(reverseString) ? "Это палиндром" : "Это не палиндром");
         };
     }
 }
