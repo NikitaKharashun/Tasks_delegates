@@ -65,7 +65,8 @@ namespace Nikita_Tasks.Tasks
             int decimals = number - hundreds - singleNumbers;
 
 
-            Console.WriteLine(number - hundreds < 20 ? $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)number - hundreds}" : $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)(number - hundreds - singleNumbers)} {(SingleNumbers)singleNumbers}");         
+            Console.WriteLine(number - hundreds < 20 ? $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)number - hundreds}" : $"{number} => {(Hundreds)hundreds} {(DecimalNumbers)(number - hundreds - singleNumbers)} {(SingleNumbers)singleNumbers}");
+            Console.WriteLine(new string('-', 32));
         };
     }
 }

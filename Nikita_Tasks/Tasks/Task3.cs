@@ -22,6 +22,7 @@ namespace Nikita_Tasks.Tasks
             
 
             Console.WriteLine(sum == 0 ? "Ваш билет счастливый" : "Ваш билет не счастливый");
+            Console.WriteLine(new string('-', 32));
         };
     }
 }

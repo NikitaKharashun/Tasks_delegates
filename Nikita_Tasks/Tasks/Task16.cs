@@ -26,6 +26,7 @@ namespace Nikita_Tasks.Tasks
                 }
                 Console.WriteLine($"Максимальное значение: {j + 1} = {max}");
                 max = 0;
+                Console.WriteLine(new string('-', 32));
             }
         };
     }  

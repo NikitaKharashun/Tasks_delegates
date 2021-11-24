@@ -22,52 +22,44 @@ namespace Nikita_Tasks
             Console.WriteLine(new string('-', 32));
 
             // Task 3           
-            Task3.IsLucky();
-            Console.WriteLine(new string('-', 32));
+            Task3.IsLucky();           
 
             // Task 4
             Task4.ChangeToUpper();
-            Console.WriteLine(new string('-', 32));
 
             // Task 5
             Task5.NumberDesc();
-            Console.WriteLine(new string('-', 32));
 
             // Task 6
-            Task6.AmountOfSquares();
-            Console.WriteLine(new string('-', 32));
+            Task6.AmountOfSquares();           
 
             // Task 7
-            Task7.Money();
-            Console.WriteLine(new string('-', 32));
+            Task7.Money();           
 
             // Task 8
             Task8.SpaceCounter();
-            Console.WriteLine(new string('-', 32));
 
             // Task 9
             Task9.Numbers();
-            Console.WriteLine(new string('-', 32));
 
             // Task 10
             Task10.ReversedNumber();
-            Console.WriteLine(new string('-', 32));
 
             // Task 11
-            Task11.TextEditor();
-            Console.WriteLine(new string('-', 32));
+            Task11.TextEditor();            
 
             // Task 12
             Task12.IsPalindrome();
-            Console.WriteLine(new string('-', 32));
+
+            // Task 13
+            Task13.WordCounterFirstVersion();
+            Task13.WordCounterSecondVersion();
 
             // Task 14
-            Task14.EndsWithVowel();
-            Console.WriteLine(new string('-', 32));
+            Task14.EndsWithVowel();          
 
             // Task 16
-            Task16.GetMax();
-            Console.WriteLine(new string('-', 32));
+            Task16.GetMax();  
 
 
             Console.ReadKey();

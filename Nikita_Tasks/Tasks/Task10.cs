@@ -20,6 +20,7 @@ namespace Nikita_Tasks.Tasks
                 reversedNumber += numbers[i];
 
             Console.WriteLine($"Перевернутое число: {reversedNumber}");
+            Console.WriteLine(new string('-', 32));
         };
     }
 }

@@ -20,6 +20,7 @@ namespace Nikita_Tasks.Tasks
 
                 Console.WriteLine();
             }
+            Console.WriteLine(new string('-', 32));
         };
     }
 }

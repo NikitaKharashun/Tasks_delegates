@@ -24,6 +24,7 @@ namespace Nikita_Tasks.Tasks
             }
 
             Console.WriteLine($"Всего слов заканчивающихся на гласную: {counter}");
+            Console.WriteLine(new string('-', 32));
         };
     }
 }

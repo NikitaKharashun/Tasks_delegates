@@ -21,6 +21,8 @@ namespace Nikita_Tasks.Tasks
             }
             Console.WriteLine();
             Console.WriteLine($"Было введено: {spaceCounter} пробелов");
+
+            Console.WriteLine(new string('-', 32));
         };
     }
 }

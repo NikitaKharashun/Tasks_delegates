@@ -20,6 +20,8 @@ namespace Nikita_Tasks.Tasks
                 reversedString += charMass[i];
 
             Console.WriteLine(testPalindrome.Equals(reversedString) ? "Это палиндром" : "Это не палиндром");
+
+            Console.WriteLine(new string('-', 32));
         };
     }
 }

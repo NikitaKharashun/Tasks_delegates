@@ -24,6 +24,7 @@ namespace Nikita_Tasks.Tasks
 
             Console.WriteLine($"Процентная ставка => {procent}");
             Console.WriteLine($"Итоговая сумма => {Convert.ToDouble(deposit)}, количество месяцев => {monthsCounter}");
+            Console.WriteLine(new string('-', 32));
         };
     }
 }

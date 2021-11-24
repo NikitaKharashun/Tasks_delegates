@@ -26,6 +26,7 @@ namespace Nikita_Tasks.Tasks
             text = new string(symbols);
 
             Console.WriteLine($"Преобразованный текст => {text}");
+            Console.WriteLine(new string('-', 32));
         };
     }
 }

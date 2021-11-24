@@ -26,8 +26,11 @@ namespace Nikita_Tasks.Tasks
                 Console.WriteLine($"Текст успешно изменен, новый текст => {newText}");
             }
             else           
-                Console.WriteLine($"Строки {stringForEdit} нет в тексте {text}");       
+                Console.WriteLine($"Строки {stringForEdit} нет в тексте {text}");
+
+            Console.WriteLine(new string('-', 32));
         };
+
 
     }
 }
